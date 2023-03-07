@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00EEA3"
+    tools:context=".SummeryScreen">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="@string/your_report"
+
+         />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            style="@style/CustomTextStyle"
+            android:text="@string/total_question"
+            android:layout_weight="3"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/_10"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:background="@color/teal_700"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/time_taken"
+            style="@style/CustomTextStyle"
+            android:layout_weight="3"/>
+        <TextView
+            android:id="@+id/totalAttempted"
+            android:background="@color/teal_700"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            style="@style/CustomTextStyle"
+            android:text="@string/total_correct_question"
+            android:layout_weight="3"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/teal_700"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:id="@+id/correct"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/restart"
+            android:background="#9BEE00"
+            android:id="@+id/restart"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/exit"
+            android:background="#EE001C"
+            android:id="@+id/exit"/>
+    </LinearLayout>
+
+</LinearLayout>
